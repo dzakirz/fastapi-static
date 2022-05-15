@@ -9,11 +9,9 @@ db = Database.static
 
 @app.get('/')
 async def root():
-  return {
-    "name" : "Dzaki Rozaan"
-  }
+  return 'Welcome To static CRUD fastAPI by DzakiRZ'
   
-@app.get('/api/v1/users')
+@app.get('/api/users')
 async def fetch_users():
   return db
 
