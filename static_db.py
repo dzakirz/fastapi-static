@@ -3,7 +3,6 @@ from uuid import UUID
 
 from models import Gender, Role, User
 
-
 class Database:
   static :List[User] = [
     User(
